@@ -1,4 +1,7 @@
-body{
-	border: 1px solid #000;
-	width: 50px;
+.section-init{
+	margin: 0 auto;
+	max-width: 768px;
+	width: 100vw;
+	height: 100vh;
+	background:url(../img/img5.jpg) center center/100% 100% no-repeat;
 }
