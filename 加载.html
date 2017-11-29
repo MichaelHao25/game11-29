@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+<head design-width="640">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>Demo</title>
+<link rel="stylesheet" href="css/reset.css" /><!--页面样式-->
+<link rel="stylesheet" href="css/style.css" /><!--页面样式-->
+<link rel="stylesheet" href="css/scss.css" /><!--scss-->
+<link rel="stylesheet" href="css/common.css" /><!--常用样式-->
+<link rel="stylesheet" href="css/animate.min.css" /><!--CSS3动画库-->
+<script src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+<body>
+	<div class="mobile-wrap center bj3">
+        <div class="copy">
+        	<p>著作权登记号：2013SR081594</p>
+        	<p>浙网问{2015}0402-122号</p>
+        	<p>文网游备字（2016）M-CBGG 5022号</p>
+        	<p>增值电信业务许可证：浙B2-20160560</p>
+        	<p>游戏版本 v1.58</p>
+        </div>
+
+        <div class="main-bann" ani="bounceIn">
+            <img src="img/ico8.png" alt="">
+        </div>
+
+        <div class="loading">
+            <div class="wrap">
+                <i></i>
+            </div>
+            <var>Loading...<em>76%</em></var>
+        </div>
+
+
+
+    </div><!--mobile_wrap-->
+</body>
+<script src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script src="js/scrollanim.min.js"></script>
+<script src="js/swiper-3.3.1.jquery.min.js"></script><!--轮播库-->
+<script src="js/version-3.2.8.js"></script><!--封装函数-->
+<script>
+    
+    setInterval(abc,50);
+    var i=0;
+    function abc(){
+        i++;
+        if(i<=100){
+        $(".loading var em").text(i+'%');
+        $(".loading i").css({"width":i+"%"});
+        }
+    }
+</script>
+</html>

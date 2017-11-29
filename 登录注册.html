@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html>
+<head design-width="640">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>Demo</title>
+<link rel="stylesheet" href="css/reset.css" /><!--页面样式-->
+<link rel="stylesheet" href="css/style.css" /><!--页面样式-->
+<link rel="stylesheet" href="css/scss.css" /><!--scss-->
+<link rel="stylesheet" href="css/common.css" /><!--常用样式-->
+<link rel="stylesheet" href="css/animate.min.css" /><!--CSS3动画库-->
+<script src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+<body>
+	<div class="mobile-wrap center bj1">
+        <div class="copy">
+        	<p>著作权登记号：2013SR081594</p>
+        	<p>浙网问{2015}0402-122号</p>
+        	<p>文网游备字（2016）M-CBGG 5022号</p>
+        	<p>增值电信业务许可证：浙B2-20160560</p>
+        	<p>游戏版本 v1.58</p>
+        </div>
+
+        <div class="login-area">
+        	<a href="#" class="close"><img src="img/img2.jpg" alt=""></a>
+        	<div class="fl">
+        		<ul>
+        			<li>
+        				<span>账号</span>
+        				<select name="" id="">
+        					<option value=""></option>
+        				</select>
+        			</li>
+					<li>
+        				<span>密码</span>
+        				<input type="text">
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="fr">
+        		<input type="submit" value="">
+        		<a href="#" class="ico-reg"></a>
+        	</div>
+        </div>
+
+        <div class="login-but">
+        	<ul>
+        		<li><a href="#"><img src="img/ico0.png" alt=""></a></li>
+        		<li><a href="#"><img src="img/ico1.png" alt=""></a></li>
+        	</ul>
+        </div>
+
+
+        <div class="reg-box">
+            <div class="layout">
+                <a href="#" class="close"><img src="img/img2.jpg" alt=""></a>
+                <div class="fl">
+                    <ul>
+                        <li>
+                            <span>账号</span>
+                            <input type="text" placeholder="请输入账号">
+                        </li>
+                        <li>
+                            <span>昵称</span>
+                            <input type="text" placeholder="请输入昵称">
+                        </li>
+                        <li>
+                            <span>密码</span>
+                            <input type="text" placeholder="请输入密码">
+                        </li>
+                    </ul>
+                </div>
+                <div class="fr">
+                    <input type="submit" value="">
+                    <a href="#" class="ico-reg"></a>
+                    <label><input type="checkbox">我已阅读并同意<a href="#">用户服务条款</a></label>
+                </div>
+            </div>
+        </div>
+        
+
+    </div><!--mobile_wrap-->
+</body>
+<script src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script src="js/swiper-3.3.1.jquery.min.js"></script><!--轮播库-->
+<script src="js/version-3.2.8.js"></script><!--封装函数-->
+<script>
+    $(".layout .close,.layout .fr > a").click(function(event) {
+        $(".reg-box").fadeOut();
+    });
+    $(".login-area .fr a").click(function(event) {
+        $(".reg-box").fadeIn();
+    });
+
+</script>
+</html>
