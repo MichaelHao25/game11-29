@@ -1,0 +1,308 @@
+.user.small .card .card-item{
+    width: 0.70rem;
+    height: .96rem;
+    margin-left: -0.3rem;
+}
+.user.small .card .card-item+.card-item{
+    margin-left: -0.3rem;
+}
+.user.small .card .card-item .topleft{
+    top: 0.02rem;
+    left: 0.06rem;
+    font-size: 12px;
+}
+.user.small .card .card-item .bottomright{
+    right: 0.06rem;
+    bottom: 0.02rem;
+    font-size: 12px;
+}
+.card-item {
+    position: relative;
+    display: inline-block;
+    width: 1.04rem;
+    height:1.41rem;
+    background-color: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    cursor: default;
+    transition: 0.3s transform; 
+}
+.card-item.select{
+    transform: translateY(-0.3rem);
+}
+.card-item+.card-item{
+    margin-left: -0.6rem;
+}
+
+.card-item .topleft,.card-item .bottomright {
+    position: absolute;
+    font-size: .14rem;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -.01rem;
+    font-family: 'Ubuntu Condensed',sans-serif;
+    white-space: pre
+}
+
+.card-item .topleft {
+    top: .08rem;
+    left: .09rem;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0)
+}
+
+.card-item .bottomright {
+    bottom: .08rem;
+    right: .09rem;
+    -webkit-transform: rotate(180deg) translate(-50%,0);
+    -moz-transform: rotate(180deg) translate(-50%,0);
+    -o-transform: rotate(180deg) translate(-50%,0);
+    -ms-transform: rotate(180deg) translate(-50%,0);
+    transform: rotate(180deg) translate(-50%,0)
+}
+
+.card-item .face {
+    height: 100%;
+    background-position: 50% 50%;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat
+}
+
+.card-item.joker .topleft,.card-item.joker .bottomright {
+    font-size: .12rem
+}
+
+.card-item.spades,.card-item.clubs,.card-item.joker {
+    color: #000
+}
+
+.card-item.hearts,.card-item.diamonds {
+    color: #f00
+}
+
+.card-item.spades1 .face {
+    background-image: url("../img/faces/0_1.svg")
+}
+
+.card-item.spades2 .face {
+    background-image: url("../img/faces/0_2.svg")
+}
+
+.card-item.spades3 .face {
+    background-image: url("../img/faces/0_3.svg")
+}
+
+.card-item.spades4 .face {
+    background-image: url("../img/faces/0_4.svg")
+}
+
+.card-item.spades5 .face {
+    background-image: url("../img/faces/0_5.svg")
+}
+
+.card-item.spades6 .face {
+    background-image: url("../img/faces/0_6.svg")
+}
+
+.card-item.spades7 .face {
+    background-image: url("../img/faces/0_7.svg")
+}
+
+.card-item.spades8 .face {
+    background-image: url("../img/faces/0_8.svg")
+}
+
+.card-item.spades9 .face {
+    background-image: url("../img/faces/0_9.svg")
+}
+
+.card-item.spades10 .face {
+    background-image: url("../img/faces/0_10.svg")
+}
+
+.card-item.spades11 .face {
+    background-image: url("../img/faces/0_11.svg")
+}
+
+.card-item.spades12 .face {
+    background-image: url("../img/faces/0_12.svg")
+}
+
+.card-item.spades13 .face {
+    background-image: url("../img/faces/0_13.svg")
+}
+
+.card-item.hearts1 .face {
+    background-image: url("../img/faces/1_1.svg")
+}
+
+.card-item.hearts2 .face {
+    background-image: url("../img/faces/1_2.svg")
+}
+
+.card-item.hearts3 .face {
+    background-image: url("../img/faces/1_3.svg")
+}
+
+.card-item.hearts4 .face {
+    background-image: url("../img/faces/1_4.svg")
+}
+
+.card-item.hearts5 .face {
+    background-image: url("../img/faces/1_5.svg")
+}
+
+.card-item.hearts6 .face {
+    background-image: url("../img/faces/1_6.svg")
+}
+
+.card-item.hearts7 .face {
+    background-image: url("../img/faces/1_7.svg")
+}
+
+.card-item.hearts8 .face {
+    background-image: url("../img/faces/1_8.svg")
+}
+
+.card-item.hearts9 .face {
+    background-image: url("../img/faces/1_9.svg")
+}
+
+.card-item.hearts10 .face {
+    background-image: url("../img/faces/1_10.svg")
+}
+
+.card-item.hearts11 .face {
+    background-image: url("../img/faces/1_11.svg")
+}
+
+.card-item.hearts12 .face {
+    background-image: url("../img/faces/1_12.svg")
+}
+
+.card-item.hearts13 .face {
+    background-image: url("../img/faces/1_13.svg")
+}
+
+.card-item.clubs1 .face {
+    background-image: url("../img/faces/2_1.svg")
+}
+
+.card-item.clubs2 .face {
+    background-image: url("../img/faces/2_2.svg")
+}
+
+.card-item.clubs3 .face {
+    background-image: url("../img/faces/2_3.svg")
+}
+
+.card-item.clubs4 .face {
+    background-image: url("../img/faces/2_4.svg")
+}
+
+.card-item.clubs5 .face {
+    background-image: url("../img/faces/2_5.svg")
+}
+
+.card-item.clubs6 .face {
+    background-image: url("../img/faces/2_6.svg")
+}
+
+.card-item.clubs7 .face {
+    background-image: url("../img/faces/2_7.svg")
+}
+
+.card-item.clubs8 .face {
+    background-image: url("../img/faces/2_8.svg")
+}
+
+.card-item.clubs9 .face {
+    background-image: url("../img/faces/2_9.svg")
+}
+
+.card-item.clubs10 .face {
+    background-image: url("../img/faces/2_10.svg")
+}
+
+.card-item.clubs11 .face {
+    background-image: url("../img/faces/2_11.svg")
+}
+
+.card-item.clubs12 .face {
+    background-image: url("../img/faces/2_12.svg")
+}
+
+.card-item.clubs13 .face {
+    background-image: url("../img/faces/2_13.svg")
+}
+
+.card-item.diamonds1 .face {
+    background-image: url("../img/faces/3_1.svg")
+}
+
+.card-item.diamonds2 .face {
+    background-image: url("../img/faces/3_2.svg")
+}
+
+.card-item.diamonds3 .face {
+    background-image: url("../img/faces/3_3.svg")
+}
+
+.card-item.diamonds4 .face {
+    background-image: url("../img/faces/3_4.svg")
+}
+
+.card-item.diamonds5 .face {
+    background-image: url("../img/faces/3_5.svg")
+}
+
+.card-item.diamonds6 .face {
+    background-image: url("../img/faces/3_6.svg")
+}
+
+.card-item.diamonds7 .face {
+    background-image: url("../img/faces/3_7.svg")
+}
+
+.card-item.diamonds8 .face {
+    background-image: url("../img/faces/3_8.svg")
+}
+
+.card-item.diamonds9 .face {
+    background-image: url("../img/faces/3_9.svg")
+}
+
+.card-item.diamonds10 .face {
+    background-image: url("../img/faces/3_10.svg")
+}
+
+.card-item.diamonds11 .face {
+    background-image: url("../img/faces/3_11.svg")
+}
+
+.card-item.diamonds12 .face {
+    background-image: url("../img/faces/3_12.svg")
+}
+
+.card-item.diamonds13 .face {
+    background-image: url("../img/faces/3_13.svg")
+}
+
+.card-item.joker1 .face {
+    background-image: url("../img/faces/4_1.svg")
+}
+
+.card-item.joker2 .face {
+    background-image: url("../img/faces/4_2.svg")
+}
+
+.card-item.joker3 .face {
+    background-image: url("../img/faces/4_3.svg")
+}
