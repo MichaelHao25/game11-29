@@ -26,10 +26,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-smushit": "^1.2.0",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylus": "^2.6.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-pngquant": "^5.0.1",
     "postcss-import": "^11.0.0",
     "postcss-pxtorem": "^4.0.1",
+    "poststylus": "^1.0.0",
     "precss": "^2.0.0",
     "webpack": "^3.8.1"
   }

@@ -1,26 +1,26 @@
 .user.small .card .card-item{
-    width: 0.70rem;
-    height: .96rem;
+    width: 0.83rem;
+    height: 1.11rem;
     margin-left: -0.3rem;
 }
 .user.small .card .card-item+.card-item{
-    margin-left: -0.3rem;
+    margin-left: -0.6rem;
 }
 .user.small .card .card-item .topleft{
-    top: 0.02rem;
-    left: 0.06rem;
-    font-size: 12px;
+    top: 0.03rem;
+    left: 0.07rem;
+    font-size: 14px;
 }
 .user.small .card .card-item .bottomright{
-    right: 0.06rem;
-    bottom: 0.02rem;
-    font-size: 12px;
+    right: 0.07rem;
+    bottom: 0.03rem;
+    font-size: 14px;
 }
 .card-item {
     position: relative;
     display: inline-block;
-    width: 1.04rem;
-    height:1.41rem;
+    width: 1.16rem;
+    height:1.61rem;
     background-color: #fff;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -33,21 +33,24 @@
     transform: translateY(-0.3rem);
 }
 .card-item+.card-item{
-    margin-left: -0.6rem;
+    margin-left: -0.84rem;
 }
 
 .card-item .topleft,.card-item .bottomright {
     position: absolute;
-    font-size: .14rem;
+    font-size: .16rem;
     text-align: center;
     line-height: 1;
     letter-spacing: -.01rem;
     font-family: 'Ubuntu Condensed',sans-serif;
-    white-space: pre
+    white-space: pre;
+    font-weight: bold;
+    width: 2em;
+    text-align: center;
 }
 
 .card-item .topleft {
-    top: .08rem;
+    top: .05rem;
     left: .09rem;
     -webkit-transform: translate(-50%,0);
     -moz-transform: translate(-50%,0);
@@ -57,7 +60,7 @@
 }
 
 .card-item .bottomright {
-    bottom: .08rem;
+    bottom: .05rem;
     right: .09rem;
     -webkit-transform: rotate(180deg) translate(-50%,0);
     -moz-transform: rotate(180deg) translate(-50%,0);

@@ -73,7 +73,27 @@ html,body{
 			.score{
 				position: absolute;
 				top: -20%;
-				z-index: 10;
+				z-index: 10;/*
+				img{
+					&:nth-child(1){
+						width: 19px;
+					}
+					&:nth-child(2){
+						width: 55px;
+					}
+				}*/
+				.add{
+					width: 19px;
+				}
+				.minus{
+					width: 21px;
+				}
+				.a785{
+					width: 55px;
+				}
+				.a31{
+					width: 32px;
+				}
 			}
 		}
 		.card{
@@ -101,6 +121,9 @@ html,body{
 		&.win-root{
 			.win{
 				display: block;
+				img{
+					width: 144px;
+				}
 			}
 		}
 		&.ok{

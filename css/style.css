@@ -750,6 +750,7 @@ body,html{
 	margin-left: .11rem;
 	margin-right: .06rem;
 	    outline-style: none;
+	    border: none;
 }
 .zx-recharge .ping ul li input:checked{
 	background: url(../img/zx5.png) center center/100% 100% no-repeat;

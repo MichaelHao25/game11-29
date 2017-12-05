@@ -11,6 +11,10 @@ var smushit = require('gulp-smushit');
 
 var postcss = require('gulp-postcss');
 // 目前使用的插件名字
+// 
+var stylus = require('gulp-stylus');
+var poststylus = require('poststylus');
+
 var sourcemaps = require('gulp-sourcemaps');
 
 
@@ -83,18 +87,19 @@ gulp.task('css', function() {
         //  unitPrecision:5,
         //   propWhiteList: []
         // }),
-        pxtorem({
-            rootValue: 100,
-            replace: true,
-            unitPrecision: 5,
-            propList: ['*', '!border'],
-        }),
+    pxtorem({
+        rootValue: 100,
+        replace: true,
+        unitPrecision: 5,
+        propList: ['*', '!border*'],
+    }),
         // wap
         // pxtorem({
-        //     rootValue: 1,
+        //     rootValue: 20,
         //     replace: false,
         //     unitPrecision: 5,
-        //     propList : ['font']
+        //     propList: ['font*', 'line-height*']
+        //         // propList需要进行pxtorem进行转换的元素“*”代表所有的
         // }),
         // bootstrap
         // atImport,
@@ -108,9 +113,15 @@ gulp.task('css', function() {
         // }),
     ];
     // return gulp.src('input/public.pcss')
+    // return gulp.src('./input/*.styl')
     return gulp.src('./input/*.css')
         .pipe(sourcemaps.init())
         .pipe(postcss(processors))
+        // .pipe(stylus({
+        //     use: [
+        //         poststylus(processors)
+        //     ]
+        // }))
         .on('error', swallowError)
         // .pipe(rename("public.css"))
         .pipe(base64({
