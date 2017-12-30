@@ -66,10 +66,11 @@ gulp.task('serve', ['css'], function() {
         server: "./"
     });
 
-    gulp.watch("./input/*.css", ['css']);
+    gulp.watch("./input/*", ['css']);
     gulp.watch("./js/*.js").on('change', reload);
     gulp.watch("./*.html").on('change', reload);
 });
+
 
 gulp.task('css', function() {
     var processors = [
@@ -80,7 +81,7 @@ gulp.task('css', function() {
         // }),
         autoprefixer,
         // cssnext,
-        precss,
+        // precss,
         // pxtorem({
         //  rootValue: 2,
         //  replace: true,
@@ -94,13 +95,13 @@ gulp.task('css', function() {
         propList: ['*', '!border*'],
     }),
         // wap
-        // pxtorem({
-        //     rootValue: 20,
-        //     replace: false,
-        //     unitPrecision: 5,
-        //     propList: ['font*', 'line-height*']
-        //         // propList需要进行pxtorem进行转换的元素“*”代表所有的
-        // }),
+    // pxtorem({
+    //     rootValue: 20,
+    //     replace: false,
+    //     unitPrecision: 5,
+    //     propList: ['*', '!border']
+    //     // propList需要进行pxtorem进行转换的元素“*”代表所有的
+    // }),
         // bootstrap
         // atImport,
         // mqpacker,
@@ -113,15 +114,15 @@ gulp.task('css', function() {
         // }),
     ];
     // return gulp.src('input/public.pcss')
-    // return gulp.src('./input/*.styl')
-    return gulp.src('./input/*.css')
+    return gulp.src('./input/*.styl')
+        // return gulp.src('./input/*.css')
         .pipe(sourcemaps.init())
-        .pipe(postcss(processors))
-        // .pipe(stylus({
-        //     use: [
-        //         poststylus(processors)
-        //     ]
-        // }))
+        // .pipe(postcss(processors))
+        .pipe(stylus({
+            use: [
+                poststylus(processors)
+            ]
+        }))
         .on('error', swallowError)
         // .pipe(rename("public.css"))
         .pipe(base64({

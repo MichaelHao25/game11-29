@@ -81,336 +81,345 @@ html,body{
 					&:nth-child(2){
 						width: 55px;
 					}
-				}*/
-				.add{
-					width: 19px;
-				}
-				.minus{
-					width: 21px;
-				}
-				.a785{
-					width: 55px;
-				}
-				.a31{
-					width: 32px;
-				}
-			}
-		}
-		.card{
-			position: relative;
-			margin: 0;
-			margin-left: 32px;
-			display: flex;
-			&>img{
-				display: block;
-				width: 104px;
-				height: 141px;
-				+img{
-					margin-left: -60px;
+					}*/
+					.add{
+						width: 19px;
+					}
+					.minus{
+						width: 21px;
+					}
+					.a785{
+						width: 55px;
+					}
+					.a31{
+						width: 32px;
+					}
 				}
 			}
-		}
-
-		.win{
-			position: absolute;
-			right: 15%;
-			top: 60%;
-			z-index: 10;
-			display: none;
-		}
-		&.win-root{
-			.win{
-				display: block;
-				img{
-					width: 144px;
-				}
-			}
-		}
-		&.ok{
-			.base-info{
-				position: relative;
-				&:after{
-					content:'';
-					position: absolute;
-					top: -5px;
-					background:url(../img/ok.png) center center/auto 30px no-repeat;
-					left: 0;
-					right: 0;
-					height: 30px;
-				}
-			}
-		}
-		&.banker{
-			.base-info{
-				position: relative;
-				box-shadow: 0 0 0 3px #b3551a,0 0 30px rgba(255,168,0,0.5);
-				&:after{
-					content:'';
-					position: absolute;
-					top: -10px;
-					background:url(../img/banker.png) right center/auto 36px no-repeat;
-					left: 0;
-					right: -15px;
-					height: 36px;
-				}
-				&:before{
-					content:'';
-					position: absolute;
-					background:url(../img/banker-light.png) right -50px center/auto 198px no-repeat;
-					top: -30px;
-					bottom: -30px;
-					left: -52px;
-					right: 0;
-				}
-			}
-		}
-		&.small{
 			.card{
-				img{
-					width: 70px;
-					height: 96px;
-					margin-left: -30px;
+				position: relative;
+				margin: 0;
+				margin-left: 32px;
+				display: flex;
+				&>img{
+					display: block;
+					width: 104px;
+					height: 141px;
+					+img{
+						margin-left: -60px;
+					}
+				}
+			}
+
+			.win{
+				position: absolute;
+				right: 7%;
+				top: 60%;
+				z-index: 10;
+				display: none;
+			}
+			&.win-root{
+				.win{
+					display: block;
+					img{
+						width: 144px;
+					}
+				}
+			}
+			&.ok{
+				.base-info{
+					position: relative;
+					&:after{
+						content:'';
+						position: absolute;
+						top: -5px;
+						background:url(../img/ok.png) center center/auto 30px no-repeat;
+						left: 0;
+						right: 0;
+						height: 30px;
+					}
+				}
+			}
+			&.banker{
+				.base-info{
+					position: relative;
+					box-shadow: 0 0 0 3px #b3551a,0 0 30px rgba(255,168,0,0.5);
+					&:after{
+						content:'';
+						position: absolute;
+						top: -10px;
+						background:url(../img/banker.png) right center/auto 36px no-repeat;
+						left: 0;
+						right: -15px;
+						height: 36px;
+					}
+					&:before{
+						content:'';
+						position: absolute;
+						background:url(../img/banker-light.png) right -50px center/auto 198px no-repeat;
+						top: -30px;
+						bottom: -30px;
+						left: -52px;
+						right: 0;
+					}
+				}
+			}
+			&.small{
+				.card{
+					img{
+						width: 83px;
+						height: 111px;
+						margin-left: -60px;
+					}
 				}
 			}
 		}
-	}
-	.table{
-		padding: 0 20px;
-		box-sizing: border-box;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-		.row{
+		.table{
+			padding: 0 20px;
+			box-sizing: border-box;
+			height: 100%;
 			display: flex;
-			width: 100%;
+			flex-direction: column;
 			align-items: center;
-			justify-content: center;
-			&:nth-child(2),
-			&:nth-child(3){
-				justify-content: space-between;
-				/**/
-				.user{
-					&:nth-child(2){
+			justify-content: space-around;
+			.row{
+				display: flex;
+				width: 100%;
+				align-items: center;
+				justify-content: center;
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3){
+					.user:first-child{
+						.card img:first-child{
+							margin-left: -35px;
+						}
+					};
+				}
+				&:nth-child(2),
+				&:nth-child(3){
+					justify-content: space-between;
+					/**/
+					.user{
+						&:nth-child(2){
 
+							.win{
+								position: absolute;
+								right: 35%;
+								top: 60%;
+								z-index: 10;
+							}
+						}
+					}
+				}
+				&:nth-child(4){
+					.user{
 						.win{
 							position: absolute;
-							right: 35%;
-							top: 60%;
+							right: 20%;
+							top: -10%;
 							z-index: 10;
 						}
 					}
 				}
+
 			}
-			&:nth-child(4){
-				.user{
-					.win{
-						position: absolute;
-						right: 20%;
-						top: -10%;
-						z-index: 10;
-					}
+		}
+	}
+
+	.ready{
+		.btn{
+			position: absolute;
+			top: 820px;
+			left: 50%;
+			transform: translateX(-50%);
+			img{
+				display: block;
+				width: 136px;
+				height: 62px;
+			}
+		}
+		.ani{
+			&.ready-ani{
+				img{
+					animation: ready-ani 3s linear forwards;
 				}
 			}
-
-		}
-	}
-}
-
-.ready{
-	.btn{
-		position: absolute;
-		top: 820px;
-		left: 50%;
-		transform: translateX(-50%);
-		img{
-			display: block;
-			width: 136px;
-			height: 62px;
-		}
-	}
-	.ani{
-		&.ready-ani{
 			img{
-				animation: ready-ani 3s linear forwards;
+				position: absolute;
+				display: block;
+				width: 370px;
+				height: 168px;
+				bottom: 20%;
+				left: 100%;
+				transform: translateX(0);
 			}
 		}
-		img{
-			position: absolute;
-			display: block;
-			width: 370px;
-			height: 168px;
-			bottom: 20%;
-			left: 100%;
-			transform: translateX(0);
-		}
 	}
-}
 
-section.banker{
-	position: absolute;
-	bottom: 22%;
-	left: 0;
-	right: 0;
-	.btn-group{
-		margin: 0 auto;
-		width: 50%;
-		display: flex;
-		justify-content: space-around;
-		a,img{
-			display: block;
-		}
-		img{
-			width: 86px;
+	section.banker{
+		position: absolute;
+		bottom: 22%;
+		left: 0;
+		right: 0;
+		.btn-group{
+			margin: 0 auto;
+			width: 50%;
+			display: flex;
+			justify-content: space-around;
+			a,img{
+				display: block;
+			}
+			img{
+				width: 86px;
+			}
 		}
 	}
-}
-section.down-money{
-	position: absolute;
-	bottom: 22%;
-	left: 0;
-	right: 0;
-	&.no-banker{
-		.no-banker{
-			display: flex;
+	section.down-money{
+		position: absolute;
+		bottom: 22%;
+		left: 0;
+		right: 0;
+		&.no-banker{
+			.no-banker{
+				display: flex;
+			}
+			.banker{
+				display: none;
+			}
 		}
 		.banker{
+			img{
+				display: block;
+				margin: 0 auto;
+				width: 312px;
+			}
+		}
+		.no-banker{
 			display: none;
-		}
-	}
-	.banker{
-		img{
-			display: block;
-			margin: 0 auto;
-			width: 312px;
-		}
-	}
-	.no-banker{
-		display: none;
-		justify-content: center;
-		a{
-			margin: 0 10px;
-			display: block;
-			width: 81px;
-			height: 41px;
-			text-align: center;
-			font-size: 20px;
-			color: #fff;
-			line-height: 40px;
-			background:url(../img/x.png) center center/100% 100% no-repeat;
-		}
-	}
-}
-section.resuit{
-	position: absolute;
-	bottom: 22%;
-	left: 0;
-	right: 0;
-	.function{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height:auto;
-		.num{
-			width: 56px;
-			height: 38px;
-			border-radius: 0 0 5px 5px;
-			background: rgba(0,0,0,0.5);
-			text-align: center;
-			line-height: 38px;
-			font-size: 20px;
-			color: #fff;
-		}
-		.add{
-			padding: 0 5px;
-			font-size: 20px;
-			color: #fff;
-		}
-	}
-	.btn-group{
-		padding-top: 24px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		a,img{
-			display: block;
-		}
-		a{
-			position: relative;
-			margin: 0 20px;
-			&.resuit-layout:after{
-				content:'';
-				position: absolute;
-				width: 104px;
-				height: 105px;
-				background:url(../img/resuit-layout.png) center center/100% 100% no-repeat;
-				top: 0;
-				right: 0;
-				transform: translate(30%, -30%);
-
+			justify-content: center;
+			a{
+				margin: 0 10px;
+				display: block;
+				width: 81px;
+				height: 41px;
+				text-align: center;
+				font-size: 20px;
+				color: #fff;
+				line-height: 40px;
+				background:url(../img/x.png) center center/100% 100% no-repeat;
 			}
 		}
 	}
-}
-section.game-resuit{
-	&.win-game{
+	section.resuit{
+		position: absolute;
+		bottom: 22%;
+		left: 0;
+		right: 0;
+		.function{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height:auto;
+			.num{
+				width: 56px;
+				height: 38px;
+				border-radius: 0 0 5px 5px;
+				background: rgba(0,0,0,0.5);
+				text-align: center;
+				line-height: 38px;
+				font-size: 20px;
+				color: #fff;
+			}
+			.add{
+				padding: 0 5px;
+				font-size: 20px;
+				color: #fff;
+			}
+		}
+		.btn-group{
+			padding-top: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			a,img{
+				display: block;
+			}
+			a{
+				position: relative;
+				margin: 0 20px;
+				&.resuit-layout:after{
+					content:'';
+					position: absolute;
+					width: 104px;
+					height: 105px;
+					background:url(../img/resuit-layout.png) center center/100% 100% no-repeat;
+					top: 0;
+					right: 0;
+					transform: translate(30%, -30%);
+
+				}
+			}
+		}
+	}
+	section.game-resuit{
+		&.win-game{
+			.win{
+				visibility: visible;
+				transform: translate(0, 0);
+			}
+		}
+		&.loser-game{
+			.loser{
+				bottom: 20%;
+				visibility: visible;
+				transform: translate(0, 0);
+			}
+		}
 		.win{
-			visibility: visible;
-			transform: translate(0, 0);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			visibility: hidden;
+			transform: translate(0, 100%);
+			transition: 0.3s;
+			img{
+				display: block;
+				margin: 0 auto;
+				width: 495px;
+			}
 		}
-	}
-	&.loser-game{
 		.loser{
-			bottom: 20%;
-			visibility: visible;
-			transform: translate(0, 0);
-		}
-	}
-	.win{
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		visibility: hidden;
-		transform: translate(0, 100%);
-		transition: 0.3s;
-		img{
-			display: block;
-			margin: 0 auto;
-			width: 495px;
-		}
-	}
-	.loser{
 
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		visibility: hidden;
-		transform: translate(0, 100%);
-		transition: 0.3s;
-		img{
-			display: block;
-			margin: 0 auto;
-			width: 177px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			visibility: hidden;
+			transform: translate(0, 100%);
+			transition: 0.3s;
+			img{
+				display: block;
+				margin: 0 auto;
+				width: 177px;
+			}
 		}
 	}
-}
-@keyframes ready-ani{
-	33%,66%{
-		left: 50%;
-		transform: translateX(-50%);
+	@keyframes ready-ani{
+		33%,66%{
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		100%{
+			left: 0;
+			transform: translateX(-100%);
+		}
 	}
-	100%{
-		left: 0;
-		transform: translateX(-100%);
-	}
-}
 
-.hide{
-	display: none;
-}
-.show{
-	display: block;
-}
+	.hide{
+		display: none;
+	}
+	.show{
+		display: block;
+	}

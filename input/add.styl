@@ -1,0 +1,30 @@
+.send-card
+	position absolute
+	left 0
+	right 0
+	bottom 0
+	top 0
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	align-items center
+	justify-content center
+	img
+		&+img
+			margin-left -50px
+
+.card-ani
+	position absolute
+	img
+		display block
+		width 100%
+
+
+.section-init .user .card>img
+	opacity 0
+
+.section-init .user .card>img.on
+	opacity 1
+	
